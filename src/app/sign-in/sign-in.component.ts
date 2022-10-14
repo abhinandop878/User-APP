@@ -15,8 +15,14 @@ export class SignInComponent implements OnInit {
       "Username":this.Username,
       "Password":this.Password
     }
+    if (this.Username=="admin"&&this.Password=="1234") {
+      alert("login Successfully")
+    } else {
+      alert("Invalid Credential")
+    }
     console.log(data)
-    alert("Successfully added")
+    this.Username=""
+    this.Password=""
   }
   ngOnInit(): void {
   }
