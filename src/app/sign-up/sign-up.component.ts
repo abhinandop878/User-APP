@@ -20,6 +20,7 @@ export class SignUpComponent implements OnInit {
   ParentName=""
   Username=""
   Password=""
+  status:boolean=false
 readRegister=()=>{
   let data={
     "Name":this.Name,
@@ -36,7 +37,20 @@ readRegister=()=>{
     "Password":this.Password
   }
   console.log(data)
+  this.status=true
   alert("Successfully added")
+  this.Name=""
+  this.PhoneNo=""
+  this.Gender=""
+  this.EmailId=""
+  this.Pincode=""
+  this.Address=""
+  this.BloodGroup=""
+  this.dob=""
+  this.Age=""
+  this.ParentName=""
+  this.Username=""
+  this.Password=""
 }
   ngOnInit(): void {
   }
